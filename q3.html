@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="q3.css">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form id="jobApplicationForm">
+            <!-- Personal Information -->
+            <h2>Personal Information</h2>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <!-- Add other personal information fields here -->
+
+            <!-- Resume and Cover Letter -->
+            <h2>Resume and Cover Letter</h2>
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            <!-- Add other resume and cover letter fields here -->
+
+           <!-- Education -->
+<h2>Education</h2>
+<label for="educationLevel">Highest Level of Education Attained:</label>
+<select id="educationLevel" name="educationLevel" required>
+    <option value="highSchool">High School</option>
+    <option value="associate">Associate's Degree</option>
+    <option value="bachelor">Bachelor's Degree</option>
+    <option value="master">Master's Degree</option>
+    <option value="doctorate">Doctorate</option>
+</select>
+<label for="schoolName">Name of School/University:</label>
+<input type="text" id="schoolName" name="schoolName" required>
+<label for="major">Major/Area of Study:</label>
+<input type="text" id="major" name="major" required>
+<label for="graduationYear">Graduation Year:</label>
+<input type="text" id="graduationYear" name="graduationYear" required>
+
+
+            <h2>Employment History</h2>
+<label for="jobTitle">Job Title:</label>
+<input type="text" id="jobTitle" name="jobTitle" required>
+<label for="companyName">Company Name:</label>
+<input type="text" id="companyName" name="companyName" required>
+<label for="employmentDates">Employment Dates:</label>
+<input type="text" id="employmentDates" name="employmentDates" required>
+<label for="jobResponsibilities">Job Responsibilities:</label>
+<textarea id="jobResponsibilities" name="jobResponsibilities" required></textarea>
+
+          <!-- Skills -->
+<h2>Skills</h2>
+<label for="skills">Relevant Skills:</label>
+<input type="text" id="skills" name="skills" required>
+<label for="certifications">Certifications:</label>
+<input type="text" id="certifications" name="certifications">
+
+            <!-- Availability -->
+<h2>Availability</h2>
+<label for="startDate">Start Date:</label>
+<input type="date" id="startDate" name="startDate" required>
+<label for="workSchedule">Preferred Work Schedule:</label>
+<input type="text" id="workSchedule" name="workSchedule" required>
+<label for="relocate">Willingness to Relocate:</label>
+<select id="relocate" name="relocate" required>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+</select>
+
+        <!-- References -->
+<h2>References</h2>
+<label for="referenceName">Reference Name:</label>
+<input type="text" id="referenceName" name="referenceName" required>
+<label for="referenceContact">Reference Contact Information:</label>
+<input type="text" id="referenceContact" name="referenceContact" required>
+<label for="relationship">Relationship to Applicant:</label>
+<input type="text" id="relationship" name="relationship" required>
+
+         <!-- Additional Questions -->
+<h2>Additional Questions</h2>
+<label for="whyWorkHere">Why do you want to work for this company?</label>
+<textarea id="whyWorkHere" name="whyWorkHere" required></textarea>
+
+            <!-- Consent and Agreement -->
+            <h2>Consent and Agreement</h2>
+            <label for="agree">I agree to the terms and conditions:</label>
+            <input type="checkbox" id="agree" name="agree" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <button id="viewApplicationsBtn">View Applications as Table</button>
+        <div id="applicationsTable"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
